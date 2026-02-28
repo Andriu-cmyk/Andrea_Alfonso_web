@@ -1,0 +1,205 @@
+
+body{
+    background-color: black;
+}
+
+#ham{
+    width: 35px;
+    margin: 10px;
+  
+}
+
+main {
+
+    /* height: 100vh; */
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+
+
+
+h1, h2, h3, h4, p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+
+    
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+
+}
+
+
+p{
+    margin: 20px;
+}
+
+
+#centro {
+
+ text-align: center;
+ margin: 20px;
+
+}
+
+#intro {
+    width: 65%;
+    position: absolute;
+    top: 0;
+
+    z-index: 1;
+    text-align: right;
+    right: 30px;
+
+}
+
+
+
+#s1,
+#s2,
+#s3,
+#s4,
+#s5,
+#s6{
+
+    grid-column: 1/1;
+    width: 100%; /*92.5%*/
+   /* border: solid grey 1px; */
+    margin: 40px;
+   display: flex;
+}
+
+#s7{
+  grid-column: 1/1;
+    border: solid white 1px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+#s8{
+  grid-column: 1/1;
+    border: solid white 1px;
+    margin-left: 20px;
+   margin-right: 20px;
+}
+
+
+#s9{
+  grid-column: 1/1;
+    border: solid white 1px;
+     margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 20px;
+}
+
+
+#s10{
+  grid-column: 1/1;
+    border: solid white 1px;
+    margin-left: 20px;
+   margin-right: 20px;
+}
+
+
+
+
+
+
+#cuidados {
+    margin-top: 300px;
+}
+
+
+.rrss {
+    width: 30px;
+}
+
+
+footer {
+    margin-top: 190px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+.intro{
+text-align: center;
+margin: 10%;
+
+}
+
+
+#contenedor{
+    width: 60%;
+}
+
+
+
+    footer {
+        margin-top: 190px;
+
+    }
+
+    .grid {
+
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 40px;
+    }
+
+
+
+
+
+    #f1 {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    #f2 {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    #f3 {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+
+    #f4 {
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+
+    #f5 {
+        grid-column: 1/2;
+        grid-row: 4;
+    }
+
+    #f6 {
+        grid-column: 1/2;
+        grid-row: 5;
+    }
+
+
+
+
+}
+

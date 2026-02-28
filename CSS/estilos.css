@@ -1,0 +1,240 @@
+body {
+    background-color: black;
+}
+
+#ham {
+    width: 35px;
+    margin: 10px;
+}
+
+.grid {
+
+    /* height: 100vh; */
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+
+#cabecera {
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* border: solid grey 1px;*/
+
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+
+}
+
+#yo {
+    width: 70%;
+
+    position: relative;
+    bottom: 80px;
+    right: 20px;
+}
+
+
+
+
+
+
+#centro {
+
+    /*  border: solid grey 1px;*/
+    position: relative;
+}
+
+#intro {
+    width: 65%;
+    position: absolute;
+    top: 0;
+
+    z-index: 1;
+    text-align: right;
+    right: 30px;
+
+}
+
+
+
+#s1,
+#s2,
+#s3,
+#s4,
+#s5,
+#s6,
+#s7 {
+
+    grid-column: 1/1;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+.rrss {
+
+    width: 30px;
+
+}
+
+
+
+#dndestamos,
+#bienv {
+    margin-top: 300px;
+}
+
+
+footer {
+
+    margin-top: 190px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    footer {
+        margin-top: 190px;
+
+    }
+
+    .grid {
+
+        /* height: 100vh; */
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 40px;
+    }
+
+
+
+
+
+
+
+    #yo {
+        width: 40%;
+
+        position: relative;
+        bottom: 80px;
+        right: 20px;
+    }
+
+
+
+    #intro {
+        width: 65%;
+        position: absolute;
+        top: 0;
+
+        z-index: 1;
+        text-align: right;
+        right: 100px;
+        top: 20px;
+
+    }
+
+
+
+
+    #s1 {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    #s2 {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+    #s3 {
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+
+
+    #s4 {
+        grid-column: 1/2;
+        grid-row: 3;
+    }
+
+    #s5 {
+        grid-column: 2/3;
+        grid-row: 3;
+    }
+
+    #s6 {
+        grid-column: 3/4;
+        grid-row: 3;
+    }
+
+
+
+
+    #f1 {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    #f2 {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    #f3 {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+
+    #f4 {
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+
+    #f5 {
+        grid-column: 1/2;
+        grid-row: 4;
+    }
+
+    #f6 {
+        grid-column: 1/2;
+        grid-row: 5;
+    }
+
+
+
+
+}

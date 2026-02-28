@@ -1,0 +1,273 @@
+body {
+    background-color: black;
+}
+
+#ham {
+    width: 35px;
+    margin: 10px;
+
+
+}
+
+main {
+
+    /* height: 100vh; */
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+#cabecera {
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* border: solid grey 1px;*/
+
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+
+
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+
+}
+
+
+
+
+
+
+section {
+    color: aliceblue;
+    
+}
+
+
+
+#s1 {
+    grid-column: 2/3;
+    grid-row: 1;
+
+    width: 100%;
+    border: solid grey 1px;
+
+}
+
+#s2 {
+    grid-column: 3/4;
+    grid-row: 1;
+
+    width: 100%;
+    border: solid grey 1px;
+
+}
+
+#s3 {
+    grid-column: 2/3;
+    grid-row: 2;
+
+
+    width: 100%;
+    border: solid grey 1px;
+
+}
+
+
+#s4 {
+    grid-column: 3/4;
+    grid-row: 2;
+
+    width: 100%;
+    border: solid grey 1px;
+
+}
+
+
+
+#dndestamos,
+#bienv {
+    margin-bottom: 70px;
+    display: flex;
+    margin-top: 300px;
+}
+
+
+
+
+
+
+
+
+@keyframes carr_scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#carrusel {
+   margin-top: 200px;
+    display: flex;
+    overflow: hidden;
+}
+
+#carrusel:hover {
+    .carr_grupo {
+        animation-play-state: paused;
+    }
+}
+
+.carr_grupo {
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-right: 10px;
+
+    animation-name: carr_scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.carrusel_item {
+
+    position: relative;
+
+}
+
+.carrusel_item .texto {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white;
+    min-width: 80%;
+    min-height: 40%;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    /* EN EL CUADRO DE TEXTO PODEMOS PONER FILTROS PARA EFECTOS, MEJORANDO LA DECORACIÓN */
+    /* https://developer.mozilla.org/es/docs/Web/CSS/Reference/Properties/backdrop-filter */
+    backdrop-filter: blur(2px);
+    /* backdrop-filter: brightness(60%);
+    backdrop-filter: contrast(40%);
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+    backdrop-filter: grayscale(30%);
+    backdrop-filter: hue-rotate(120deg);
+    backdrop-filter: invert(70%);
+    backdrop-filter: opacity(20%); */
+}
+
+.carr_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+.rrss {
+    width: 30px;
+}
+
+
+footer {
+    margin-top: 190px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    footer {
+        margin-top: 190px;
+
+    }
+
+    .grid {
+
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 40px;
+    }
+
+
+
+
+
+    #f1 {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    #f2 {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    #f3 {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+
+    #f4 {
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+
+    #f5 {
+        grid-column: 1/2;
+        grid-row: 4;
+    }
+
+    #f6 {
+        grid-column: 1/2;
+        grid-row: 5;
+    }
+
+
+
+
+}
