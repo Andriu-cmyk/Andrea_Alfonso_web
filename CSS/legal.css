@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(26, 26, 26);
+ margin: 100px;
+}
+
+h2,
+h3,
+h4,
+p, 
+li {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    margin-top: 70px;
+}
+
+p{
+    margin: 8px;
+}
+
+h1 {
+    margin-bottom: 100px;
+    margin-top: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+    color: rgb(161, 161, 161);
+}

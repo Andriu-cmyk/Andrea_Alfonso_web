@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(26, 26, 26);
 }
 
 #ham {
@@ -34,6 +34,10 @@ header label {
 }
 
 
+.menuDesktop {
+    display: none;
+    font-size: 1.2rem;
+}
 
 
 
@@ -55,7 +59,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+form {
 
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -116,10 +121,6 @@ h1 {
     text-align: center;
 }
 
-.menuDesktop {
-    display: none;
-    font-size: 1.2rem;
-}
 
 
 

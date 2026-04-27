@@ -1,12 +1,46 @@
-
-body{
-    background-color: black;
+body {
+    background-color: rgb(26, 26, 26);
 }
 
-#ham{
-    width: 35px;
+#ham {
+    width: 0px;
     margin: 10px;
+    cursor: pointer;
+    margin-top: 25px;
 }
+
+header label {
+    cursor: pointer;
+}
+
+#btn-nav:checked~.nav {
+    padding-left: 55px;
+
+}
+
+
+
+
+
+.nav {
+    flex-direction: row;
+    width: 130%;
+
+}
+
+.hamburguer {
+    width: 35px;
+    cursor: pointer;
+}
+
+
+.menuDesktop {
+    display: none;
+    font-size: 1.2rem;
+}
+
+
+
 
 main {
 
@@ -19,17 +53,27 @@ main {
 }
 
 
+#video {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
-h1, h2, h3, h4, p{
+h1,
+h2,
+h3,
+h4,
+p {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#cron{
+#cron {
     margin-top: 200px;
     margin-left: 20px;
-    
+
 }
 
 h1 {
@@ -50,9 +94,10 @@ h1 {
 }
 
 
+
 #centro {
 
-  /*  border: solid grey 1px;*/
+    /*  border: solid grey 1px;*/
     position: relative;
 }
 
@@ -78,8 +123,9 @@ h1 {
 #s7 {
 
     grid-column: 1/1;
-    width: 100%; /*92.5%*/
-   /* border: solid grey 1px; */
+    width: 100%;
+    /*92.5%*/
+    /* border: solid grey 1px; */
     margin-top: 40px;
     text-align: center;
 }
@@ -92,7 +138,9 @@ h1 {
 }
 
 
-
+#mi{
+    margin: 30px0;
+}
 
 
 
@@ -118,7 +166,7 @@ h1 {
 .carrusel::before {
     content: "";
     display: block;
-    padding-top: 60%; 
+    padding-top: 60%;
 }
 
 
@@ -136,11 +184,11 @@ h1 {
 .carrusel_item {
     position: relative;
     margin-right: 0;
-    
+
     min-width: 100%;
     height: 100%;
 }
-ç
+
 .carrusel_item .texto {
     position: absolute;
     top: 35%;
@@ -149,7 +197,7 @@ h1 {
     color: white;
     font-size: 2rem;
     border: 1px solid white;
-    width: 80%;    
+    width: 80%;
     min-height: 40%;
     border-radius: 10px;
     padding: 15px;
@@ -185,7 +233,7 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     font-size: 28px;
@@ -242,6 +290,29 @@ footer {
 @media screen and (min-width: 768px) {
 
 
+
+
+    #ham {
+        position: fixed;
+        top: 10;
+        left: 10;
+
+        display: flex;
+        gap: 1rem;
+
+        font-size: 0.8rem;
+    }
+
+    #btn-nav {
+        display: none;
+    }
+
+    .menuDesktop {
+        display: flex;
+        gap: 15px;
+    }
+
+
     footer {
         margin-top: 190px;
 
@@ -258,6 +329,14 @@ footer {
     }
 
 
+
+    #yo {
+        width: 40%;
+
+        position: relative;
+        bottom: 80px;
+        right: 20px;
+    }
 
 
 
@@ -283,12 +362,16 @@ footer {
     }
 
     #f5 {
-        grid-column: 1/2;
+         margin-left: 40px;
+        text-align: left;
+        grid-column: 1/3;
         grid-row: 4;
     }
 
     #f6 {
-        grid-column: 1/2;
+         margin-left: 40px;
+        text-align: left;
+        grid-column: 1/3;
         grid-row: 5;
     }
 

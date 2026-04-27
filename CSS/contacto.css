@@ -1,10 +1,42 @@
 body {
-    background-color: black;
+    background-color: rgb(26, 26, 26);
 }
 
 #ham {
-    width: 35px;
+    width: 0px;
     margin: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+header label {
+    cursor: pointer;
+}
+
+#btn-nav:checked~.nav {
+    padding-left: 55px;
+
+}
+
+
+
+
+
+.nav {
+    flex-direction: row;
+    width: 130%;
+
+}
+
+.hamburguer {
+    width: 35px;
+    cursor: pointer;
+}
+
+
+.menuDesktop {
+    display: none;
+    font-size: 1.2rem;
 }
 
 main {
@@ -68,7 +100,7 @@ h1 {
 }
 
 .cita {
-    color: rgb(26, 26, 26);
+    color: black;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -122,4 +154,29 @@ h1 {
 .alfonsaink {
     margin-top: 200px;
     text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    #ham {
+        position: fixed;
+        top: 10;
+        left: 10;
+
+        display: flex;
+        gap: 1rem;
+
+        font-size: 0.8rem;
+    }
+
+    #btn-nav {
+        display: none;
+    }
+
+    .menuDesktop {
+        display: flex;
+        gap: 15px;
+    }
 }
