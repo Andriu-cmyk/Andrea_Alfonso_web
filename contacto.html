@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alfonsaink</title>
     <link rel="stylesheet" href="CSS/contacto.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <script src="JS/menu.js" defer></script>
 </head>
 
 <body>
 
-    <input name="btn-nav" type="checkbox" id="ham">
-
-    <label id="btn-nav">
-        <img src="img/ham-ico.png" alt="" class="hamburguer">
-    </label>
-
-
-    <nav class="menuDesktop">
-        <a href="index.html">Inicio</a>
-        <a href="galeria.html">Galería</a>
-        <a href="cuidados.html">Cuidados</a>
-        <a href="sobre mí.html">Sobre mí</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="pedir cita.html">Pedir cita</a>
-    </nav>
+    <header>
+        <nav class="menuDesktop">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="cuidados.html">Cuidados</a>
+            <a href="sobre mí.html">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="pedir cita.html">Pedir cita</a>
+        </nav>
 
 
+
+        <section id="menu">
+            <button id="btnMenu">
+                <img src="img/ham-ico.png" alt="" class="hamburguer">
+            </button>
+        </section>
+
+    </header>
 
 
     <main>
@@ -42,7 +46,9 @@
 
 
         <div id="contenedor-cita">
-            <a href="pedir cita.html"> <h4 class="cita">Pedir cita</h4> </a>
+            <a href="pedir cita.html">
+                <h4 class="cita">Pedir cita</h4>
+            </a>
         </div>
 
 
@@ -54,8 +60,12 @@
 
 
         <section id="s7">
-            mapa
-            <p>Av. Eslovaquia 77, P4, 3</p>
+            <iframe id="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.4358898121127!2d-0.5650402242755348!3d38.19977567188141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd624c58180db959%3A0x5cf94790c660f4a9!2sC.%20L%C3%A9rida%2C%204%2C%2003130%20Santa%20Pola%2C%20Alicante!5e0!3m2!1ses!2ses!4v1777373197662!5m2!1ses!2ses"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <p>C. Lérida 4, p3, 1A</p>
         </section>
 
 
@@ -71,9 +81,9 @@
 
         <section id="footer">
             <h2>DATOS DE CONTACTO</h2>
-            <p>+34 678 901 234</p>
-            <p>andreadelmoral@gmail.com</p>
-            <p>alfonsaink@tattoo.com</p>
+              <p>+34 662 104 190</p>
+                <p>andreaalfonsodelmoral@gmail.com</p>
+                <p>alfonsaink@tattoo.com </p> 
         </section>
 
 
@@ -108,9 +118,10 @@
         <br>
         <br>
 
-
         <section class="pol">
-            <p>Aviso legal</p>
+            <a href="legal.html">
+                <p>Aviso legal</p>
+            </a>
             <p class="t">El Aviso Legal de Alfonsaink regula el acceso y uso del sitio web, informando sobre la
                 titularidad, condiciones de utilización, propiedad intelectual y limitación de responsabilidades. Al
                 navegar por esta web, el usuario acepta cumplir con las condiciones establecidas y hacer un uso adecuado
@@ -119,7 +130,9 @@
         </section>
 
         <section class="pol">
-            <p>Política de privacidad</p>
+            <a href="legal.html">
+                <p>Política de privacidad</p>
+            </a>
             <p class="t">La Política de Privacidad de Alfonsaink explica cómo se recogen, utilizan y protegen los datos
                 personales de los usuarios, así como los derechos que pueden ejercer sobre ellos. Los datos facilitados
                 se emplean únicamente para gestionar consultas, citas y comunicaciones, garantizando siempre su
@@ -128,7 +141,9 @@
         </section>
 
         <section class="pol">
-            <p>Cookies</p>
+            <a href="legal.html">
+                <p>Cookies</p>
+            </a>
             <p class="t">La Política de Cookies de Alfonsaink informa sobre el uso de cookies en el sitio web con el fin
                 de mejorar la experiencia de navegación del usuario. Estas cookies permiten analizar el uso de la web,
                 recordar preferencias y optimizar el funcionamiento del sitio. El usuario puede configurar o rechazar el

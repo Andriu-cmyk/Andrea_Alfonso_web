@@ -1,0 +1,115 @@
+/* FIJAMOS UN PANEL CON INFO DE DEPURACIÓN, LUEGO SE QUITARÁ */
+#info {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    gap: 1rem;
+
+    font-size: 0.8rem;
+    /* color: white; */
+}
+
+header {
+    color: white;
+    padding: 10px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* TAMAÑO DEL BOTÓN DE HAMBURGUESA */
+#btnMenu {
+    cursor: pointer;
+     background-color:  rgb(26, 26, 26);
+     border: none;
+}
+
+#btnMenu:hover {
+    /* background-color: white; */
+    transform: scale(1.05);
+}
+
+/* SE AJUSTA EL SPAN DE LAS 3 RAYAS PARA CENTRARLO MEJOR*/
+#btnMenu span {
+    font-size: 1.6rem;
+    position: relative;
+    top: -2px;
+}
+
+#menu {
+    min-height: 3rem;
+   
+}
+
+/* EN DISEÑO MÓVIL NO SE MUESTRA EL MENÚ PARA ESCRITORIO */
+.menuDesktop {
+    display: none;
+
+    font-size: 1rem;
+}
+
+/* CAMBIO EL DISEÑO A TABLET Y ESCRITORIO */
+@media (min-width: 576px) {
+    /* En escritorio se muestra el menú completo */
+    .menuDesktop {
+        display: flex;
+        gap: 15px;
+    }
+    /* En escritorio se oculta el botón de hamburguesa */
+    #btnMenu {
+        display: none;
+    }
+}
+
+.menuDesktop a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuDesktop a:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.22);
+}
+
+@keyframes abreCaja {
+    from {
+        transform: scaleY(0%);
+    }
+    to {
+        transform: scaleY(100%);
+    }
+}
+
+/* AL DESPLEGAR EL MENU EN EL MÓVIL */
+/* Al pulsar el botón de hamburguesa se añade/quita esta clase */
+/* Al tener esta clase, se muestra el menú en una caja desplegada */
+.menuDesplegado {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
+    top: 56px;
+
+    padding: .5rem;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    
+    animation-name: abreCaja;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    transform-origin: top;
+}

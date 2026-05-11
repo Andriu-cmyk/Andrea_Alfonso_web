@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alfonsaink</title>
     <link rel="stylesheet" href="CSS/pedircita.css">
+     <link rel="stylesheet" href="CSS/menu.css">
+    <script src="JS/menu.js" defer></script>
 </head>
 
 <body>
-    <input name="btn-nav" type="checkbox" id="ham">
-    
-    <label id="btn-nav">
-        <img src="img/ham-ico.png" alt="" class="hamburguer">
-    </label>
-
-
-    <nav class="menuDesktop">
-        <a href="index.html">Inicio</a>
-        <a href="galeria.html">Galería</a>
-        <a href="cuidados.html">Cuidados</a>
-        <a href="sobre mí.html">Sobre mí</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="pedir cita.html">Pedir cita</a>
-    </nav>
+    <header>
+        <nav class="menuDesktop">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="cuidados.html">Cuidados</a>
+            <a href="sobre mí.html">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="pedir cita.html">Pedir cita</a>
+        </nav>
 
 
 
+        <section id="menu">
+            <button id="btnMenu">
+                <img src="img/ham-ico.png" alt="" class="hamburguer">
+            </button>
+        </section>
+
+    </header>
 
 
     <main>
@@ -78,7 +81,7 @@
                                 name="q10_politicaDe[]"
                                 value="He leído y estoy de acuerdo con la Política de Privacidad" required="">
                             <label id="label_input_10_0" for="input_10_0"> He leído y estoy de acuerdo con la <a
-                                    href="https://legal.site3cero.com/p/politica-de-privacidad.html">Política de
+                                    href="legal.html">Política de
                                     Privacidad</a></label>
                         </div>
                     </div>
@@ -115,7 +118,7 @@
 
         <section id="footer">
             <h2>DATOS DE CONTACTO</h2>
-            <p>+34 678 901 234</p>
+            <p>+34 662 104 190</p>
             <p>andreadelmoral@gmail.com</p>
             <p>alfonsaink@tattoo.com</p>
         </section>
@@ -153,7 +156,7 @@
         <br>
 
       <section class="pol">
-            <p>Aviso legal</p>
+           <a href="legal.html"> <p>Aviso legal</p></a>
             <p class="t">El Aviso Legal de Alfonsaink regula el acceso y uso del sitio web, informando sobre la
                 titularidad, condiciones de utilización, propiedad intelectual y limitación de responsabilidades. Al
                 navegar por esta web, el usuario acepta cumplir con las condiciones establecidas y hacer un uso adecuado
@@ -162,7 +165,7 @@
         </section>
 
         <section class="pol">
-            <p>Política de privacidad</p>
+           <a href="legal.html"><p>Política de privacidad</p></a> 
             <p class="t">La Política de Privacidad de Alfonsaink explica cómo se recogen, utilizan y protegen los datos
                 personales de los usuarios, así como los derechos que pueden ejercer sobre ellos. Los datos facilitados
                 se emplean únicamente para gestionar consultas, citas y comunicaciones, garantizando siempre su
@@ -171,7 +174,7 @@
         </section>
 
         <section class="pol">
-            <p>Cookies</p>
+            <a href="legal.html"><p>Cookies</p></a>
             <p class="t">La Política de Cookies de Alfonsaink informa sobre el uso de cookies en el sitio web con el fin
                 de mejorar la experiencia de navegación del usuario. Estas cookies permiten analizar el uso de la web,
                 recordar preferencias y optimizar el funcionamiento del sitio. El usuario puede configurar o rechazar el

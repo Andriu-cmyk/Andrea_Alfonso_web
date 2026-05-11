@@ -6,44 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alfonsaink</title>
     <link rel="stylesheet" href="CSS/sobremi.css">
+     <link rel="stylesheet" href="CSS/menu.css">
+    <script src="JS/menu.js" defer></script>
     <script src="JS/carrusel.js" defer></script>
+
 </head>
 
 <body>
 
-    <input name="btn-nav" type="checkbox" id="ham">
+    <header>
+        <nav class="menuDesktop">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="cuidados.html">Cuidados</a>
+            <a href="sobre mí.html">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="pedir cita.html">Pedir cita</a>
+        </nav>
 
-    <label id="btn-nav">
-        <img src="img/ham-ico.png" alt="" class="hamburguer">
-    </label>
 
 
-    <nav class="menuDesktop">
-        <a href="index.html">Inicio</a>
-        <a href="galeria.html">Galería</a>
-        <a href="cuidados.html">Cuidados</a>
-        <a href="sobre mí.html">Sobre mí</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="pedir cita.html">Pedir cita</a>
-    </nav>
+        <section id="menu">
+            <button id="btnMenu">
+                <img src="img/ham-ico.png" alt="" class="hamburguer">
+            </button>
+        </section>
 
+    </header>
 
 
     <main>
 
         <section id="video">
 
-            <video src="mp4/Andrea_Alfonso_Audiovisual.mp4" autoplay controls loop>
-            
+            <video src="mp4/Andrea_Alfonso_Audiovisual.mp4" id="video-ojo" autoplay controls loop>
+
             </video>
 
         </section>
 
-   <p id="mi">El arte es mi forma de entender y expresar el mundo. Mi nombre es Andrea Alfonso del Moral y,
-                con 18 años, me encuentro en pleno proceso de formación como tatuadora, explorando técnicas y
-                construyendo una identidad artística propia con constancia y sensibilidad. Este proyecto refleja mi
-                evolución, mi compromiso con el aprendizaje y mi pasión por transformar ideas en piezas con significado.
-            </p> 
+        <p id="mi">El arte es mi forma de entender y expresar el mundo. Mi nombre es Andrea Alfonso del Moral y,
+            con 18 años, me encuentro en pleno proceso de formación como tatuadora, explorando técnicas y
+            construyendo una identidad artística propia con constancia y sensibilidad. Este proyecto refleja mi
+            evolución, mi compromiso con el aprendizaje y mi pasión por transformar ideas en piezas con significado.
+
+            En esta sección de la página, quiero abrime y contaros en profundidad sobre mí. Desde bien pequeña me ha gustado pintar, crear, experimentar. Y ahora que soy mayor, lo he desarrollado más. A parte de tatuar, también dibujo, y hago graffitis. Cualquier forma de manchar y hacer arte es bienvenida en mi.
+            Pienso, que las manchas no estropean la ropa, los muebles, las paredes, el suelo... Solo tienes que saber utilizarla, mirarla desde diferentes puntos, y crear magia con ella. Un lugar con un estilo nuevo, una prenda de ropa original etc. Donde unos ven desastre, otros ven nuevas oportunidades.
+        </p>
 
     </main>
 
@@ -57,7 +66,7 @@
         <section class="grid">
 
             <section id="f1">
-                <h2>CONTACTA</h2>
+                <a href="contacto.html"><h2>CONTACTA</h2></a>
                 <p>+34 662 104 190</p>
                 <p>andreaalfonsodelmoral@gmail.com</p>
             </section>
@@ -67,7 +76,7 @@
 
             <section id="f2">
                 <h3>UBICACIÓN</h3>
-                <p>Av. Eslovaquia 77, P4, 3</p>
+                <p>C. Lérida 4, p3, 1A</p>
             </section>
 
             <br>
@@ -89,9 +98,9 @@
             <section id="f4">
                 <h2>SÍGUENOS</h2>
                 <div id="rrss">
-                    <img src="img/insta.png" alt="" class="rrss">
-                    <img src="img/was.png" alt="" class="rrss">
-                    <img src="img/facebook.png" alt="" class="rrss">
+                    <img src="img/icono-telefono.png" alt="" class="rrss">
+                    <img src="img/icono-mail.png" alt="" class="rrss">
+                    <img src="img/icono-ubicación.png" alt="" class="rrss">
                 </div>
             </section>
 
@@ -100,8 +109,10 @@
 
 
             <section id="f5">
-                <a href="legal.html"> <h4>Aviso legal</h4> </a>
-                
+                <a href="legal.html">
+                    <h4>Aviso legal</h4>
+                </a>
+
                 <p>El Aviso Legal de Alfonsaink regula el acceso y uso del sitio web, informando sobre la titularidad,
                     condiciones de utilización, propiedad intelectual y limitación de responsabilidades. Al navegar por
                     esta web, el usuario acepta cumplir con las condiciones establecidas y hacer un uso adecuado de sus
@@ -109,8 +120,10 @@
                 </p>
             </section>
 
-             <section id="f6">
-               <a href="legal.html"><h4>Política de privacidad</h4></a> 
+            <section id="f6">
+                <a href="legal.html">
+                    <h4>Política de privacidad</h4>
+                </a>
                 <p>La Política de Privacidad de Alfonsaink explica cómo se recogen, utilizan y protegen los datos
                     personales de los usuarios, así como los derechos que pueden ejercer sobre ellos. Los datos
                     facilitados se emplean únicamente para gestionar consultas, citas y comunicaciones, garantizando
@@ -125,6 +138,7 @@
     </footer>
 
 
+    <a href="#top" class="volver-arriba"><img src="img/Alfonsaink_logo_blanco.png" alt="" id="logo"></a>
 
 </body>
 
