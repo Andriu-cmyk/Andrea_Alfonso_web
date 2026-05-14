@@ -17,11 +17,20 @@ body {
     margin-top: 25px;
 }
 
-#menu {
-    position: absolute;
-    top: 25px;
-    left: 25px;
+.menuDesktop {
+    gap: 45px;
+    margin-top: -50px;
+
+    display: flex;
+    justify-content: center;
 }
+
+
+#menu {
+    margin-top: 50px;
+    position: absolute;
+}
+
 header label {
     cursor: pointer;
 }
@@ -41,14 +50,16 @@ header label {
 .hamburguer {
     width: 35px;
     cursor: pointer;
+
+    display: flex;
+    justify-content: right;
+    align-items: end;
 }
 
 
-.menuDesktop {
-    display: none;
-    font-size: 1.2rem;
+#english {
+    width: 40px;
 }
-
 
 
 h1,
@@ -123,12 +134,14 @@ section {
 #titulo {
     margin-bottom: 50px;
     font-size: 3rem;
+    margin-top: 250px;
+    font-family: 'intro';
+    color: rgb(161, 161, 161);
+
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 200px;
-    font-family: 'intro';
-    color: rgb(161, 161, 161);
+
 }
 
 #titulo:hover {
@@ -158,11 +171,11 @@ section {
     }
 }
 
-main{
+main {
     margin-bottom: 200px;
 }
 
-#grupo-carrusel{
+#grupo-carrusel {
     width: 100%;
     overflow: hidden;
 }
@@ -176,12 +189,12 @@ main{
 
 .carrusel:hover {
     .carr_grupo {
-        animation-play-state: paused;   
+        animation-play-state: paused;
     }
 
     .carr_grupo2 {
         animation-play-state: paused;
-        width: 99%;   
+        width: 99%;
     }
 }
 
@@ -231,7 +244,7 @@ main{
 .carrusel_item:hover {
     width: 99%;
     transition-duration: 1s;
-} 
+}
 
 
 .carr_img {
@@ -259,9 +272,9 @@ main{
     width: 30px;
 }
 
-.rrss:hover{
+.rrss:hover {
     width: 29px;
-    
+
 }
 
 footer {
@@ -293,30 +306,34 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-
-
-
-    #btn-nav {
-        display: none;
-    }
-
     #btnMenu {
         display: none;
     }
 
     .menuDesktop {
-        display: flex;
+        margin-top: 10px;
         gap: 45px;
-        justify-content: end;
-        position: absolute;
-        right: 30px;
-        top: 30px;
+        display: flex; 
+        justify-content: center;
     }
 
     .menuDesktop a {
         color: white;
         text-decoration: none;
     }
+
+    .menuDesktop a:hover {
+        color: red;
+        font-size: 0.9em;
+        transition: 0.3s;
+    }
+
+
+    #english {
+        width: 40px;
+        margin-top: -8px;
+    }
+
 
     #titulo {
         font-size: 3.7rem;
@@ -327,7 +344,7 @@ footer {
     }
 
 
-    #carrusel{
+    #carrusel {
         width: 2000px;
         margin-top: 100px;
     }

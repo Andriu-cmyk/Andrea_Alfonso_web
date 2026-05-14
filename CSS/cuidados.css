@@ -27,9 +27,6 @@ header label {
 }
 
 
-
-
-
 .nav {
     flex-direction: row;
     width: 130%;
@@ -41,13 +38,22 @@ header label {
     cursor: pointer;
 }
 
-
 .menuDesktop {
-    display: none;
-    font-size: 1.2rem;
+    gap: 45px;
+    margin-top: -50px;
+
+    display: flex;
+    justify-content: center;
 }
 
+#menu {
+    margin-top: 50px;
+    position: absolute;
+}
 
+#english {
+    width: 40px;
+}
 
 
 
@@ -89,8 +95,6 @@ p {
     transition: 0.2s;
 }
 
-
-
 p {
     margin: 20px;
 }
@@ -114,7 +118,6 @@ h4 {
     z-index: 1;
     text-align: right;
     right: 30px;
-
 }
 
 
@@ -125,17 +128,29 @@ h4 {
 #s4,
 #s5,
 #s6 {
-
     grid-column: 1/1;
     width: 100%;
     margin: 40px;
     display: flex;
 }
 
+#contenedor p {
+    display: flex;
+    text-align: start;
+}
+
+
+
 .img-cuidados {
     width: 300px;
 }
 
+
+
+
+#grid {
+    margin-top: 200px;
+}
 
 
 #s7 {
@@ -174,11 +189,6 @@ h4 {
     margin: 20px;
 }
 
-
-
-#contenedor p {
-    margin-right: 35px;
-}
 
 
 
@@ -244,16 +254,22 @@ footer {
     }
 
     .menuDesktop {
+        margin-top: 10px;
         display: flex;
-        gap: 15px;
+        gap: 45px;
+        justify-content: center;
     }
 
+    #english {
+        width: 40px;
+        margin-top: -8px;
+    }
 
     #grid p {
         display: none;
     }
 
-   
+
     #grid {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -308,8 +324,15 @@ footer {
 
 
 
-    #contenedor {
+    #contenedor p {
         width: 60%;
+        width: 600px;
+        margin-left: 100px;
+        margin-right: 35px;
+    }
+
+    #contenedor h4 {
+        width: 300px;
     }
 
 

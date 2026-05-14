@@ -46,9 +46,23 @@ header label {
 
 
 .menuDesktop {
-    display: none;
-    font-size: 1.2rem;
+    gap: 45px;
+    margin-top: -50px;
+
+    display: flex;
+    justify-content: center;
 }
+
+#menu {
+    margin-top: 50px;
+    position: absolute;
+} 
+
+
+#english {
+    width: 40px;
+}
+
 
 main {
 
@@ -103,6 +117,19 @@ h1 {
     text-align: center;
 }
 
+.botones-contacto {
+    color: white;
+
+}
+
+.botones-contacto:hover {
+    color: red;
+    font-size: 1.05rem;
+    transition: 0.2s;
+}
+
+
+
 #contenedor-cita {
     display: flex;
     text-align: center;
@@ -119,7 +146,7 @@ h1 {
     align-items: center;
     border-radius: 50px;
     background-color: red;
-    width: 100px;
+    width: 110px;
     height: 45px;
 }
 
@@ -187,19 +214,40 @@ h1 {
         font-size: 0.8rem;
     }
 
-    #btn-nav {
+    #btnMenu {
         display: none;
     }
 
     .menuDesktop {
-        display: flex;
-        gap: 15px;
+        margin-top: 10px;
+        gap: 45px;
+        display: flex; 
+        justify-content: center;
     }
 
-    #mapa:hover {
-    transition: 0.4s;
-    width: 500px;
-    height: 400px;
+    .menuDesktop a {
+        color: white;
+        text-decoration: none;
+    }
 
-}
+    .menuDesktop a:hover {
+        color: red;
+        font-size: 0.9em;
+        transition: 0.3s;
+    }
+
+
+    #english {
+        width: 40px;
+        margin-top: -8px;
+    }
+
+
+
+    #mapa:hover {
+        transition: 0.4s;
+        width: 500px;
+        height: 400px;
+
+    }
 }

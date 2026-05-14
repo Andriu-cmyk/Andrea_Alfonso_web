@@ -42,10 +42,21 @@ header label {
 
 
 .menuDesktop {
-    display: none;
-    font-size: 1.2rem;
+    gap: 45px;
+    margin-top: -50px;
+
+    display: flex;
+    justify-content: center;
 }
 
+#menu {
+    margin-top: 50px;
+    position: absolute;
+} 
+
+#english{
+    width: 40px;
+}
 
 
 
@@ -148,8 +159,33 @@ h1 {
         display: none;
     }
 
-    .menuDesktop {
-        display: flex;
-        gap: 15px;
+     #btnMenu {
+        display: none;
     }
+
+    .menuDesktop {
+        margin-top: 10px;
+        gap: 45px;
+        display: flex; 
+        justify-content: center;
+    }
+
+    .menuDesktop a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menuDesktop a:hover {
+        color: red;
+        font-size: 0.9em;
+        transition: 0.3s;
+    }
+
+
+    #english {
+        width: 40px;
+        margin-top: -8px;
+    }
+
+
 }

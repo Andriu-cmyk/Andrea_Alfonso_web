@@ -43,11 +43,21 @@ header label {
 
 
 .menuDesktop {
-    display: none;
-    font-size: 1.2rem;
+    gap: 45px;
+    margin-top: -50px;
+
+    display: flex;
+    justify-content: center;
 }
 
+#menu {
+    margin-top: 50px;
+    position: absolute;
+} 
 
+#english {
+    width: 40px;
+}
 
 
 main {
@@ -62,7 +72,7 @@ main {
 
 
 #video {
-    margin-top: 200px;
+    margin-top: 250px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -325,7 +335,7 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-    #video{
+    #video {
         margin-top: 50px;
     }
 
@@ -335,12 +345,12 @@ footer {
 
 
 
-#mi{
-    text-align: center;
-    margin-right: 300px;
-    margin-left: 300px;
-    margin-top: 100px;
-}
+    #mi {
+        text-align: center;
+        margin-right: 300px;
+        margin-left: 300px;
+        margin-top: 100px;
+    }
 
     #ham {
         position: fixed;
@@ -353,13 +363,32 @@ footer {
         font-size: 0.8rem;
     }
 
-    #btn-nav {
+   #btnMenu {
         display: none;
     }
 
     .menuDesktop {
-        display: flex;
-        gap: 15px;
+        margin-top: 10px;
+        gap: 45px;
+        display: flex; 
+        justify-content: center;
+    }
+
+    .menuDesktop a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menuDesktop a:hover {
+        color: red;
+        font-size: 0.9em;
+        transition: 0.3s;
+    }
+
+
+    #english {
+        width: 40px;
+        margin-top: -8px;
     }
 
 

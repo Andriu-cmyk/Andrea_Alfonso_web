@@ -4,6 +4,29 @@
 
 }
 
+.menuDesktop {
+    gap: 45px;
+    margin-top: -50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    margin-top: 50px;
+    position: absolute;
+} 
+
+header img {
+    width: 50px;
+    transition: all .3s ease-in-out;
+}
+
+
+.oculta {
+    display: none;
+}
+
 
 body {
     background-color: rgb(26, 26, 26);
@@ -42,9 +65,10 @@ header label {
 }
 
 
-.menuDesktop {
-    display: none;
-    font-size: 1.2rem;
+
+
+#english {
+    width: 40px;
 }
 
 
@@ -107,7 +131,6 @@ p {
 
 
 #centro {
-    /*  border: solid grey 1px;*/
     position: relative;
 }
 
@@ -245,8 +268,9 @@ footer {
     }
 
     .menuDesktop {
-        display: flex;
+        margin-top: 10px;
         gap: 45px;
+        display: flex; 
         justify-content: center;
     }
 
@@ -262,6 +286,10 @@ footer {
     }
 
 
+    #english {
+        width: 40px;
+        margin-top: -8px;
+    }
 
     #titulo {
         font-size: 3.7rem;
