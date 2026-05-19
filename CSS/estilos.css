@@ -4,6 +4,10 @@
 
 }
 
+#manos{
+    width: 100%;
+}
+
 .menuDesktop {
     gap: 45px;
     margin-top: -50px;
